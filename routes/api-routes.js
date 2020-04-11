@@ -50,4 +50,14 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.get("/api/books", function(req, res) {
+    const books = db.Book.findall();
+    res.json(books);
+  });
+
+  app.get("/api/books/:weekID", function(req, res) {
+    const book = db.Book.findall({where : {weekID : req.params.weekID}});
+    res.json(book);
+  });
 };
