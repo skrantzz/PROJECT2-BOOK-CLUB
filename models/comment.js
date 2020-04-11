@@ -6,6 +6,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
+    posterName: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     bookID: {
       type: DataTypes.INTEGER,
       allowNull: false
