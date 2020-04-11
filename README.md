@@ -22,6 +22,12 @@
 
 * Must meet good quality coding standards (indentation, scoping, naming)
 
+******FOLLOW THIS***
+
+you can use bootstrap (although it's recommended not to)
+you have to use Sequelize
+a third party can be any of the following: a library, package, technology or API (like any from RapidAPI)
+must use environment variables to protect sensitive info
 
 ## Presentation Requirements
 
