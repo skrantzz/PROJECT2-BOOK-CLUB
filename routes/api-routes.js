@@ -52,12 +52,14 @@ module.exports = function(app) {
   });
 
   app.get("/api/books", function(req, res) {
-    const books = db.Book.findall();
-    res.json(books);
+    db.Book.findAll().then(books => {
+      res.json(books);
+    });
   });
 
   app.get("/api/books/:weekID", function(req, res) {
-    const book = db.Book.findall({where : {weekID : req.params.weekID}});
-    res.json(book);
+    db.Book.findAll({where : {weekID : req.params.weekID}}).then(book => {
+      res.json(book[0]);
+    });
   });
 };
