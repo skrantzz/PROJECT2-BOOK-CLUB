@@ -23,7 +23,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     weekID: {
-      type: DataTypes.INT,
+      type: DataTypes.INTEGER,
       allowNull: false
     }
   });
