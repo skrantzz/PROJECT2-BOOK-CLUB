@@ -1,4 +1,60 @@
-form.signup,
-form.login {
-  margin-top: 50px;
+a:hover {
+    background-color: blue;
 }
+
+/* * { 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    flex
+}
+
+.nav-wrapper {
+    float: left;
+    height: 600px;
+    width: 200px;
+    padding: 20px;
+    border: solid 1px black;
+    
+}
+
+.wrapper {
+        padding-left: 300px;
+}
+
+.brand-logo {
+    padding: 30px;
+}
+
+.page-footer {
+    background-color: grey;
+    height: 200px;
+    width: 100%;
+    float: left;
+    margin-bottom: 0px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+ .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+      font-size: inherit;
+  }
+
+
+  #container {
+    padding-left: 300px;
+  }
+  
+  #content {
+    padding: 20px;
+  }
+  
+  @media only screen and (max-width : 992px) {
+    #container {
+      padding-left: 0px;
+    }
+  } */
