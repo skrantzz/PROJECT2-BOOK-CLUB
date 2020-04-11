@@ -2,23 +2,29 @@ a:hover {
     background-color: blue;
 }
 
-/* * { 
+
+
+* { 
     margin: 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
     flex
 }
-
+ 
 .nav-wrapper {
-    float: left;
-    height: 600px;
-    width: 200px;
-    padding: 20px;
-    border: solid 1px black;
+    /* float: left; */
+    /* height: 600px; */
+    /* width: 200px; */
+    /* padding: 20px; */
+    margin-left: 1.2rem;
     
 }
 
+.page-footer{
+    padding: .5rem;
+}
+/* 
 .wrapper {
         padding-left: 300px;
 }
