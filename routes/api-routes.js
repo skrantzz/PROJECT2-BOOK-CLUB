@@ -1,6 +1,8 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
+var date = require("date-and-time");
+
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -51,6 +53,7 @@ module.exports = function(app) {
     }
   });
 
+  //BOOKS API
   app.get("/api/books", function(req, res) {
     db.Book.findAll().then(books => {
       res.json(books);
@@ -61,5 +64,25 @@ module.exports = function(app) {
     db.Book.findAll({where : {weekID : req.params.weekID}}).then(book => {
       res.json(book[0]);
     });
+  });
+
+  //COMMENTS API
+  app.get("/api/comments/:weekID", function(req, res) {
+    db.Comment.findAll({where : {weekID : req.params.weekID}}).then(comments => {
+      res.json(comments);
+    });
+  });
+
+  app.post("/api/comments/:weekID", function(req, res) {
+    const now = new Date();
+
+    const comment = {
+      postedDate: date.format(now, "hh:mm A MMM DD YYYY"),
+      bookID: req.params.weekID,
+      posterName: req.body.posterName,
+      body: req.body.body
+    };
+    db.Comment.create(comment);
+    res.json(comment);
   });
 };
