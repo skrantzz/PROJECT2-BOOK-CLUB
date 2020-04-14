@@ -1,8 +1,10 @@
-maxVel = 20;
+maxVel = 100;
 
-maxRot = 3;
+maxRot = 0.5;
 
-impulseDivisor = 1000;
+maxDistance = 500;
+
+impulseDivisor = 10000;
 
 canvasSize = 400;
 
@@ -23,10 +25,15 @@ function draw() {
     //Velocity addition
   
       //X
-  if (!(mySquare.velX > maxVel && mySquare.posX > mouseX) &&
-      !(mySquare.velX < -1 * maxVel && mySquare.posX < mouseX))
+  const distanceX = mouseX - mySquare.posX;
+  
+  if (!(mySquare.velX > maxVel && mySquare.posX > mouseX) && 
+      !(mySquare.velX < -1 * maxVel && mySquare.posX < mouseX) && 
+      (Math.abs(distanceX) < maxDistance))
   {
-    mySquare.velX += (mouseX - mySquare.posX) / impulseDivisor;
+    const distanceDifferenceX = maxDistance*Math.sign(distanceX) - distanceX;
+    
+    mySquare.velX += (distanceDifferenceX) / impulseDivisor;
 
     mySquare.velX = Math.min(mySquare.velX,maxVel);
     mySquare.velX = Math.max(mySquare.velX,maxVel * -1);
@@ -43,10 +50,15 @@ function draw() {
   }
   
       //Y
-  if (!(mySquare.velY > maxVel && mySquare.posY > mouseY) &&
-      !(mySquare.velY < -1 * maxVel && mySquare.posY < mouseX))
+  const distanceY = mouseY - mySquare.posY;
+  
+  if (!(mySquare.velY > maxVel && mySquare.posY > mouseX) && 
+      !(mySquare.velY < -1 * maxVel && mySquare.posY < mouseX) && 
+      (Math.abs(distanceY) < maxDistance))
   {
-    mySquare.velY += (mouseY - mySquare.posY) / impulseDivisor;
+    const distanceDifferenceY = maxDistance*Math.sign(distanceY) - distanceY;
+    
+    mySquare.velY += (distanceDifferenceY) / impulseDivisor;
 
     mySquare.velY = Math.min(mySquare.velY,maxVel);
     mySquare.velY = Math.max(mySquare.velY,maxVel * -1);
@@ -68,11 +80,11 @@ function draw() {
       !(mySquare.rot < -1 * maxRot && mySquare.posX < mouseX))
   {
     if (mySquare.posX > mouseX) {
-      mySquare.rotVel += 0.1;
+      mySquare.rotVel += 0.01;
     }
     
     if (mySquare.posX < mouseX) {
-      mySquare.rotVel -= 0.1;
+      mySquare.rotVel -= 0.01;
     }
   }
     // Velocity modifying the location;
