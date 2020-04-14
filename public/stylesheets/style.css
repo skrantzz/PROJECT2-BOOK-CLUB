@@ -3,7 +3,6 @@ a:hover {
 }
 
 
-
 * { 
     margin: 0px;
     padding: 0px;
@@ -23,6 +22,10 @@ a:hover {
 
 .page-footer{
     padding: .5rem;
+}
+
+#book-card {
+    border: 1px black;
 }
 /* 
 .wrapper {
