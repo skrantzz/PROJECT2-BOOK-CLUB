@@ -15,16 +15,20 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     summary: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     coverArtURL: {
       type: DataTypes.STRING,
       allowNull: false
     },
+    reviewURL: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     weekID: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
     }
   });
   return Book;
