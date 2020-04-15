@@ -6,7 +6,6 @@ var db = require("../models");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
-
   // app.get("/", function(req, res) {
   //   // If the user already has an account send them to the members page
   //   if (req.user) {
@@ -29,13 +28,34 @@ module.exports = function(app) {
   //   res.sendFile(path.join(__dirname, "../public/members.html"));
   // });
 
-
+  // current book
   app.get("/", function(req, res) {
-    db.Book.findAll({where : {weekID : 1}}).then(book => {
-      res.render("index", {currentTitle: book[0].title, currentImage: book[0].imageURL})
-    })
-  })
+    db.Book.findAll({
+      where: {
+        id: [1, 2, 3]
+      }
+    }).then(books => {
+      res.render("index", { book_data: books });
+    });
+  });
+  
+// upcoming books
+  app.get("/", function(req, res) {
+    db.Book.findAll({
+      where: {
+        id: 1
+      }
+    }).then(books => {
+      res.render("index", { book_data: books });
+    });
+  });
+
 
   // app.get("/")
   // res.render(books)
 };
+
+
+
+// need an each statement with property, but needs to be an array in database, with findAll and limit number things returned to you with sqlize syntax
+// limit to 3, sequelize code syntax
