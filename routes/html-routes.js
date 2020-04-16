@@ -69,6 +69,8 @@ module.exports = function(app) {
       previousWeeks = [currentWeek - 1, currentWeek - 2, currentWeek - 3];
     }
 
+    console.log('somethings changed');
+    
     //get the previous books
     db.Book.findAll({
       where: {
