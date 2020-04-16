@@ -37,7 +37,48 @@ module.exports = function(app) {
   // });
 
   // current book
-  app.get("/", function(req, res) {
+//   app.get("/", function(req, res) {
+// <<<<<<< SydneyBranch
+// const currentBook = await db.Book(join query)
+
+//     const threeBooks = await db.Book.findAll({
+//       where: {
+//         id: [1, 2, 3]
+//       }
+//     })
+
+//     res.render('index', { currentBook: currentBook, upcoming: threeBooks})
+// db.Book.findAll({
+//          where: {
+//            id: [1, 2, 3]
+//          }
+//        })
+//     .then(books => {
+//       res.render("index", { book_data: books });
+//     });
+//   });
+  
+// // upcoming books
+// // app.get("/", function(req, res) {
+// //   db.Book.findAll({
+// //     where: {
+// //       id: 1
+// //     }
+// //   }).then(books => {
+// //     res.render("index", { book_data: books });
+// //   });
+// // });
+
+// app.get("/about", function(req, res) {
+//   res.render("about", {})
+//   console.log('hello')
+ 
+// });
+
+// app.get("/discussion", function(req, res) {
+//   res.render("discussion")
+// })
+// =======
 
     //Get the current WeekID
 
@@ -69,6 +110,7 @@ module.exports = function(app) {
   });
 
 // res.render("index", { book_data: books });
+// >>>>>>> master
 
   // app.get("/")
   // res.render(books)
