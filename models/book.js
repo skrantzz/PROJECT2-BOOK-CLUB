@@ -1,21 +1,24 @@
 module.exports = function(sequelize, DataTypes) {
-    var BookOfTheWeek = sequelize.define('BookOfTheWeek',{
-        wid: {
+    var Book = sequelize.define('Book', {
+        bid: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
-        bid: {
-            type: DataTypes.INTEGER(11),
+        title: {
+            type: DataTypes.STRING,
             allowNull: false
         },
-        weekStart:{
-            type: DataTypes.DATEONLY,
+        author: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        isbn: {
+            type: DataTypes.STRING,
             allowNull: false,
             unique: true
         }
-
-    });
-    return BookOfTheWeek;
-}
+    } );
+    return Book;
+};
