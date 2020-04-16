@@ -3,7 +3,7 @@ var path = require("path");
 var db = require("../models");
 
 function getCurrentWeekID() {
-  var d = new Date(Date.UTC(this.getFullYear(), this.getMonth(), this.getDate()));
+  var d = new Date();
   var dayNum = d.getUTCDay() || 7;
   d.setUTCDate(d.getUTCDate() + 4 - dayNum);
   var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
@@ -56,12 +56,14 @@ module.exports = function(app) {
       }
     }).then(books => {
       //get the current book
-      db.Book.findAll({
+      db.Book.findOne({
+        raw: true,
         where: {
           id: currentWeek
         }
       }).then(currentBook => {
-        res.render("index", { book_data: books, current_book: currentBook})
+        console.log(currentBook);
+        res.render("index", { book_data: books, current: currentBook})
       });
     });
   });
