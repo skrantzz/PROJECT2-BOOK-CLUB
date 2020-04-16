@@ -17,5 +17,6 @@ module.exports = function(sequelize, DataTypes) {
         }
 
     });
-    return BookOfTheWeek
+
+    return BookOfTheWeek;
 }
