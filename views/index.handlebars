@@ -1,0 +1,75 @@
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <div class="row center">
+            <h5 class="header col s12 light">A virtual book club to keep us sane!</h5>
+        </div>
+        <h1 class="header center orange-text">Book of the Week</h1>
+        <div class="card grey lighten-1">
+            <div class="card-content white-text">
+                <span class="card-title center">{{current.title}}</span>
+                <br><br>
+                <div class="card-image">
+                    <img src={{current.coverArtURL}}>
+                </div>
+            </div>
+            <div class="row center">
+                <a href="#" id="download-button" class="btn-large waves-effect waves-light orange">Join The
+                    Discussion</a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <Br>
+    <h2 class="center">Upcoming books</h2>
+    <br><br>
+    <!---------------- cards --------------->
+    <div class="container">
+        <div class="row">
+            {{#each book_data}}
+            <div class="col s12 m4">
+                <div class="card">
+                    <span class="card-title orange-text">{{this.dataValues.title}}</span>
+                    <br><br>
+                    <div class="card-image">
+                        <img src={{this.dataValues.coverArtURL}}>
+                    </div>
+                    <div class="card-content">
+
+                    </div>
+                    <div class="card-action center">
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            {{!-- <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                        <span class="card-title orange-text">Book Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Book Image, title, info here.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                        <span class="card-title orange-text">Book Title</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Book Image, title, info here.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div> --}}
+        </div>
+    </div>
