@@ -68,7 +68,7 @@ module.exports = function(app) {
 
   //COMMENTS API
   app.get("/api/comments/:weekID", function(req, res) {
-    db.Comment.findAll({where : {weekID : req.params.weekID}}).then(comments => {
+    db.Comment.findAll({where : {bookID : req.params.weekID}}).then(comments => {
       res.json(comments);
     });
   });
