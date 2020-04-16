@@ -1,19 +1,21 @@
 // import { create } from "handlebars";
 
-maxVel = 3;
+maxVel = 3.5;
 
 maxRot = 0.5;
 
-maxDistance = 500;
+maxDistance = 1000;
 
-impulseMultiplier = 0.25;
+impulseMultiplier = 0.05;
 
 function createSquare() {
   return {
-    size : Math.ceil(Math.random() * 30 + 10),
+    size : Math.ceil(Math.random() * 60 + 10),
     posX : Math.ceil(Math.random() * (windowWidth - 200) + 50),
     posY : Math.ceil(Math.random() * (windowHeight - 200) + 50),
     rot : Math.floor(Math.random() * 360),
+    mouseModifierX : Math.random() * 176 - 88,
+    mouseModifierY : Math.random() * 176 - 88,
     velX : 0,
     velY : 0,
     rotVel: 0
@@ -24,7 +26,7 @@ var mySquares;
 
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
-  mySquares = [createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare()];
+  mySquares = [createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare()];
   canvas.parent('p5-bg-wrapper');
   angleMode(DEGREES);
 }
@@ -46,7 +48,6 @@ function windowResized() {
 }
 
 function draw() {
-  console.log({mouseX,mouseY})
   background(255,127,80);
   noFill();
   stroke(255,255,255)
@@ -59,12 +60,12 @@ function draw() {
   for (let i = 0; i < mySquares.length; i++) {
     let mySquare = mySquares[i];
 
-    translate(0,0);
-
     //Vector stuff
-    let vector = [mouseX - mySquare.posX,mouseY - mySquare.posY];
+    let vector = [mouseX + mySquare.mouseModifierX - mySquare.posX,mouseY + mySquare.mouseModifierY - mySquare.posY];
     let magnitude = Math.sqrt(Math.pow(mouseX - mySquare.posX,2) + Math.pow(mouseY - mySquare.posY,2));
     let unitVector = [vector[0]/magnitude,vector[1]/magnitude];
+
+    console.log({vector,magnitude,unitVector});
 
     if (!(mySquare.velX > maxVel && mySquare.posX > mouseX) && 
         !(mySquare.velX < -1 * maxVel && mySquare.posX < mouseX) && 
@@ -126,8 +127,7 @@ function draw() {
     mySquare.posX += mySquare.velX;
     mySquare.posY += mySquare.velY;
     mySquare.rot += mySquare.rotVel;
-    translate(mySquare.posX,mySquare.posY);
     //rotate(mySquare.rot);
-    rect(-(mySquare.size/2),-(mySquare.size/2),mySquare.size,mySquare.size);
+    rect(mySquare.posX - (mySquare.size/2),mySquare.posY - (mySquare.size/2),mySquare.size,mySquare.size);
   }
 }
