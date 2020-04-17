@@ -13,6 +13,8 @@ function createSquare() {
     size : Math.ceil(Math.random() * 30 + 10),
     posX : Math.ceil(Math.random() * (windowWidth - 200) + 50),
     posY : Math.ceil(Math.random() * (windowHeight - 200) + 50),
+    mouseModifierX: Math.random() * 250 - 125,
+    mouseModifierY: Math.random() * 250 - 125,
     rot : Math.floor(Math.random() * 360),
     velX : 0,
     velY : 0,
@@ -61,7 +63,7 @@ function draw() {
     translate(0,0);
 
     //Vector stuff
-    let vector = [mouseX - mySquare.posX,mouseY - mySquare.posY];
+    let vector = [mouseX + mySquare.mouseModifierX - mySquare.posX,mouseY + mySquare.mouseModifierY - mySquare.posY];
     let magnitude = Math.sqrt(Math.pow(mouseX - mySquare.posX,2) + Math.pow(mouseY - mySquare.posY,2));
     let unitVector = [vector[0]/magnitude,vector[1]/magnitude];
 
@@ -125,8 +127,7 @@ function draw() {
     mySquare.posX += mySquare.velX;
     mySquare.posY += mySquare.velY;
     mySquare.rot += mySquare.rotVel;
-    translate(mySquare.posX,mySquare.posY);
     //rotate(mySquare.rot);
-    rect(-(mySquare.size/2),-(mySquare.size/2),mySquare.size,mySquare.size);
+    rect(mySquare.posX - (mySquare.size/2),mySquare.posY - (mySquare.size/2),mySquare.size,mySquare.size);
   }
 }
