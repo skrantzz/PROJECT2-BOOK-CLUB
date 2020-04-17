@@ -1,10 +1,12 @@
 // import { create } from "handlebars";
 
+
 maxVel = 3.5;
 
 maxRot = 0.5;
 
 maxDistance = 1000;
+
 
 impulseMultiplier = 0.05;
 
@@ -13,6 +15,8 @@ function createSquare() {
     size : Math.ceil(Math.random() * 60 + 10),
     posX : Math.ceil(Math.random() * (windowWidth - 200) + 50),
     posY : Math.ceil(Math.random() * (windowHeight - 200) + 50),
+    mouseModifierX: Math.random() * 200 - 100,
+    mouseModifierY: Math.random() * 200 - 100,
     rot : Math.floor(Math.random() * 360),
     mouseModifierX : Math.random() * 176 - 88,
     mouseModifierY : Math.random() * 176 - 88,

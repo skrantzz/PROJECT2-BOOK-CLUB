@@ -8,11 +8,14 @@
     <link href="/assets/stylesheets/style.css" rel="stylesheet" media="screen,projection" />
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/assets/js/materialize/materialize.js"></script>
-    <script src="/assets/js/init.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="/assets/js/p5BG.js"></script>
     <title>Quarantine Book Club</title>
 </head>
+
+<div id="p5-bg-wrapper">
+
+</div>
 
 <body>
 
@@ -30,21 +33,18 @@
                 </ul>
         </div>
     </nav>
-    {{{ body }}}
 
-
+    <main>
+        {{{ body }}}
+    </main>
 
     <footer class="page-footer orange">
         <div class="container">
             <div class="row">
-
-
+                <div class="col l6 s12 center">
+                    <h5 class="white-text">Copyright © SAMA Productions</h5>
+                </div>
             </div>
-
-            <div class="col l6 s12 center">
-                <h5 class="white-text">Copyright © SAMA Productions</h5>
-            </div>
-        </div>
         </div>
     </footer>
 </body>
