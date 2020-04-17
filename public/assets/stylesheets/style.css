@@ -9,12 +9,9 @@ a:hover {
     list-style: none;
     text-decoration: none;
 }
- 
+
 .nav-wrapper {
-    /* float: left; */
-    /* height: 600px; */
-    /* width: 200px; */
-    /* padding: 20px; */
+    
     margin-left: 1.2rem;
     
 }
@@ -36,43 +33,37 @@ main {
   left: 0;
   z-index: -100;
 }
-/* 
-.wrapper {
-        padding-left: 300px;
-}
 
-.brand-logo {
-    padding: 30px;
-}
-
-.page-footer {
-    background-color: grey;
-    height: 200px;
-    width: 100%;
-    float: left;
-    margin-bottom: 0px;
-    border: solid 1px black;
-    text-align: center;
-}
-
- .icon-block {
-    padding: 0 15px;
-  }
-  .icon-block .material-icons {
-      font-size: inherit;
-  }
-
-
-  #container {
-    padding-left: 300px;
-  }
+.orange-text {
+  text-align: center;
   
-  #content {
-    padding: 20px;
-  }
+}
+
+.header {
+  color: rgb(245, 244, 239) !important;
+  background-color: rgb(148, 213, 220);
+}
+.card-title {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.7rem !important;
+  text-align: center !important;
   
-  @media only screen and (max-width : 992px) {
-    #container {
-      padding-left: 0px;
-    }
-  } */
+}
+
+.current-card-image {
+  float: center;
+}
+
+.comment-card {
+  width: 500px;
+  align-content: center !important;
+}
+
+.description {
+  color: white;
+}
+
+#ubTitle {
+  background-color: white;;
+}

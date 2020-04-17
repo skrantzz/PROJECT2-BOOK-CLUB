@@ -23,7 +23,7 @@ module.exports = function(app) {
     currentWeek = getCurrentWeekID();
 
     if (currentWeek <= 3) {
-      previousWeeks = [1,2,3];
+      previousWeeks = [2,3,4];
     } else {
       previousWeeks = [currentWeek - 1, currentWeek - 2, currentWeek - 3];
     }
