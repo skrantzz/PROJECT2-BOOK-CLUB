@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 a:hover {
     background-color: blue;
 }
@@ -19,15 +29,13 @@ a:hover {
     
 }
 
+
 .page-footer{
     padding: .5rem;
 }
 
 #book-card {
     border: 1px black;
-}
-main {
-  position: relative;
 }
 
 #p5-bg-wrapper {

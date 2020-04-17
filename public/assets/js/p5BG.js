@@ -46,7 +46,6 @@ function windowResized() {
 }
 
 function draw() {
-  console.log({mouseX,mouseY})
   background(255,127,80);
   noFill();
   stroke(255,255,255)
