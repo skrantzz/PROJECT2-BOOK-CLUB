@@ -64,6 +64,10 @@ main {
   color: white;
 }
 
+.card {
+  position: relative;
+}
+
 #ubTitle {
   background-color: white;;
 }
