@@ -1,20 +1,20 @@
 // import { create } from "handlebars";
 
-maxVel = 3;
+maxVel = 2;
 
 maxRot = 0.5;
 
-maxDistance = 500;
+maxDistance = 1000;
 
-impulseMultiplier = 0.25;
+impulseMultiplier = 0.1;
 
 function createSquare() {
   return {
-    size : Math.ceil(Math.random() * 30 + 10),
+    size : Math.ceil(Math.random() * 50 + 20),
     posX : Math.ceil(Math.random() * (windowWidth - 200) + 50),
     posY : Math.ceil(Math.random() * (windowHeight - 200) + 50),
-    mouseModifierX: Math.random() * 250 - 125,
-    mouseModifierY: Math.random() * 250 - 125,
+    mouseModifierX: Math.random() * 200 - 100,
+    mouseModifierY: Math.random() * 200 - 100,
     rot : Math.floor(Math.random() * 360),
     velX : 0,
     velY : 0,
@@ -26,7 +26,7 @@ var mySquares;
 
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
-  mySquares = [createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare()];
+  mySquares = [createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare(),createSquare()];
   canvas.parent('p5-bg-wrapper');
   angleMode(DEGREES);
 }
