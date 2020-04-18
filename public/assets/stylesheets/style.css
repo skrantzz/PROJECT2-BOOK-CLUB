@@ -61,6 +61,11 @@ a:hover {
   background-color: rgb(148, 213, 220);
 }
 
+white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  auto 0
 
 
 

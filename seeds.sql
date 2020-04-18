@@ -1,4 +1,4 @@
-INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'Where The Crawdads Sing',
 'Delia Owens',
  'Aug 14, 2018',
@@ -8,7 +8,7 @@ INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, 
  1
  );
 
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'Catch and Kill: Lies, Spies, and a Conspiracy to Protect Predators',
  'Ronan Farrow',
  'Oct 15, 2019',
@@ -20,7 +20,7 @@ This is the untold story of the exotic tactics of surveillance and intimidation 
  2
  );
 
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'Cleanness',
  'Garth Greenwell',
  'Jan 14, 2020',
@@ -34,7 +34,7 @@ Cleanness revisits and expands the world of Garth Greenwell’s beloved debut, W
  3
  );
 
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'The Topeka School',
  'Ben Lerner',
  'Oct 1, 2019',
@@ -46,7 +46,7 @@ Deftly shifting perspectives and time periods, The Topeka School is the story of
  4
  );
 
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'Disappearing Earth',
  'Julia Phillips',
  'May 14, 2019',
@@ -59,7 +59,7 @@ In a story as propulsive as it is emotionally engaging, and through a young writ
  'https://books.google.com/books?id=m6BtDwAAQBAJ&newbks=1&newbks_redir=0&dq=nyt+best+books+2020&source=gbs_navlinks_s',
  5
  );
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'American Oligarchs: The Kushners, the Trumps, and the Marriage of Money and Power',
  'Andrea Bernstein',
  'Jan 14, 2020',
@@ -68,7 +68,7 @@ In a story as propulsive as it is emotionally engaging, and through a young writ
  'https://books.google.com/books?id=ekm2DwAAQBAJ&newbks=1&newbks_redir=0&dq=nyt+best+books+2020&source=gbs_navlinks_s',
  6
  );
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'Friendship: The Evolution, Biology, and Extraordinary Power of Life\'s Fundamental Bond',
  'Lydia Denworth',
  'Jan 28, 2020',
@@ -81,7 +81,7 @@ Friendship illuminates the vital aspects of friendship, both visible and invisib
  'https://books.google.com/books?id=8yCfDwAAQBAJ&newbks=1&newbks_redir=0&dq=nyt+best+books+2020&source=gbs_navlinks_s',
  7
  );
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'Severance',
  'Ling Ma',
  'Aug 14, 2018',
@@ -96,7 +96,7 @@ A send-up and takedown of the rituals, routines, and missed opportunities of con
  'https://books.google.com/books?id=7vRFDwAAQBAJ&newbks=1&newbks_redir=0&dq=nyt+best+books+2020&source=gbs_navlinks_s',
  8
  );
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'The Mirror & the Light',
  'Hilary Mantel',
  'Mar 10, 2020',
@@ -109,7 +109,7 @@ Eagerly awaited and eight years in the making, The Mirror & the Light completes 
  'https://books.google.com/books?id=yEOZDwAAQBAJ&newbks=1&newbks_redir=0&dq=nyt+best+books+2020&source=gbs_navlinks_s',
  9
  );
- INSERT INTO books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
+ INSERT INTO Books (title, author, publishDate, summary, coverArtURL, reviewURL, weekID) VALUES (
 'Leaving the Atocha Station',
  'Ben Lerner',
  'Aug 23, 2011',
