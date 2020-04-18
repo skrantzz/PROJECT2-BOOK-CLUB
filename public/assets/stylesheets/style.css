@@ -45,6 +45,14 @@ a:hover {
 .orange-text {
   text-align: center;
 }
+.current-card-image {
+  width: 300px;
+}
+
+.header {
+  color: rgb(245, 244, 239) !important;
+  background-color: rgb(148, 213, 220);
+}
 
 /*
 
@@ -52,17 +60,9 @@ a:hover {
   color: rgb(245, 244, 239) !important;
   background-color: rgb(148, 213, 220);
 }
-.card-title {
-  text-align: center;
-  padding: 10px;
-  font-size: 1.7rem !important;
-  text-align: center !important;
-  
-}
 
-.current-card-image {
-  float: center;
-}
+
+
 
 .comment-card {
   width: 500px;
