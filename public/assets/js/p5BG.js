@@ -67,8 +67,6 @@ function draw() {
     let magnitude = Math.sqrt(Math.pow(mouseX - mySquare.posX,2) + Math.pow(mouseY - mySquare.posY,2));
     let unitVector = [vector[0]/magnitude,vector[1]/magnitude];
 
-    console.log({vector,magnitude,unitVector});
-
     if (!(mySquare.velX > maxVel && mySquare.posX > mouseX) && 
         !(mySquare.velX < -1 * maxVel && mySquare.posX < mouseX) && 
         (Math.abs(magnitude) < maxDistance))
