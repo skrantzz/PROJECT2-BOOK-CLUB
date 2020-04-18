@@ -56,7 +56,11 @@ a:hover {
 
 .card-title {
   white-space: nowrap;
+<<<<<<< HEAD
   overflow: hidden;
+=======
+  /* overflow: hidden; */
+>>>>>>> 719ed111bbbfb333dd07fd6013d49bdbd127d150
   text-overflow: ellipsis;
 
 }
