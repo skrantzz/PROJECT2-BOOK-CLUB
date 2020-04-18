@@ -1,6 +1,4 @@
 // import { create } from "handlebars";
-
-
 maxVel = 3.5;
 
 maxRot = 0.5;
