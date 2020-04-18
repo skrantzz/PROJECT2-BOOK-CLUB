@@ -2,14 +2,14 @@
     <div class="container">
         <br><br>
         <div class="row center">
-            <h5 class="header col s12 light">A virtual book club to keep us sane!</h5>
+            <h5 class=" col s12 light description">A virtual book club to keep us sane!</h5>
         </div>
         <h1 class="header center orange-text">Book of the Week</h1>
-        <div class="card grey lighten-1">
-            <div class="card-content white-text">
-                <span class="card-title center">{{current.title}}</span>
+        <div class="card grey lighten-3">
+            <div class="card-content current-book white-text">
+                <span class="card-title center orange-text">{{current.title}}</span>
                 <br><br>
-                <div class="card-image">
+                <div class="current-card-image card-image">
                     <img src={{current.coverArtURL}}>
                 </div>
             </div>
@@ -21,7 +21,7 @@
         </div>
     </div>
     <Br>
-    <h2 class="center">Upcoming books</h2>
+    <h2 class="header center orange-text">Upcoming books</h2>
     <br><br>
     <!---------------- cards --------------->
     <div class="container">
@@ -38,7 +38,7 @@
 
                     </div>
                     <div class="card-action center">
-                        <a href="#">More Info</a>
+                        <a href={{this.dataValues.reviewURL}}>More Info</a>
                     </div>
                 </div>
             </div>

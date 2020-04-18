@@ -17,6 +17,11 @@ module.exports = function(sequelize, DataTypes) {
         }
 
     });
+<<<<<<< HEAD
     return BookOfTheWeek;
 
 };
+=======
+    return BookOfTheWeek
+}
+>>>>>>> master
