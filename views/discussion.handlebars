@@ -1,6 +1,7 @@
 
 
-
+    
+    <script src="/assets/js/discussion.js"></script>
     </br></br></br>
     <h1 class="header center orange-text">Book of the Week</h1>
         <div class="card yellow lighten-4 comment-card s12 m4">
@@ -16,8 +17,8 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">First Name</label>
+          <textarea id="first-name" class="materialize-textarea"></textarea>
+          <label for="first-name">First Name</label>
         </div>
       </div>
     </form>
@@ -27,15 +28,25 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">Comment</label>
+          <textarea id="comment" class="materialize-textarea"></textarea>
+          <label for="comment">Comment</label>
         </div>
       </div>
     </form>
   </div>
             <div class="row center">
-                <a href="#" id="download-button" class="btn-large waves-effect waves-light orange">Post</a>
+              <input type="hidden" value={{current.weekID}} id="week-id"/>
+              <a href="#" id="post-discussion-btn" class="btn-large waves-effect waves-light orange">Post</a>
             </div>
+
+
+            <div class="row">
+              <div class="col s12">
+                <h3>Comments:</h3>
+                <div id="comment-cards"></div>
+              </div>
+            </div>
+
                 </div>
             </div>
         </form>

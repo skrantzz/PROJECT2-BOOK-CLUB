@@ -55,7 +55,19 @@ module.exports = function(app) {
   });
   
   app.get("/discussion", function(req, res) {
-    res.render("discussion")
+    // get the current week id
+    currentWeek = getCurrentWeekID();
+    // look up database for book of the current week
+    db.Book.findOne({
+      raw: true,
+      where: {
+        id: currentWeek
+      }
+    }).then(currentBook => {
+      console.log("DISCUSSION PAGE", currentBook)
+      res.render("discussion", {current: currentBook})
+    });
+    // when we find that  book, we need to send the discussion with the book data
   });
 
 };
