@@ -2,6 +2,8 @@
 var express = require("express");
 var session = require("express-session");
 var exphbs = require("express-handlebars");
+var compression = require("compression");
+
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
@@ -14,6 +16,8 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
+
+app.use(compression());
 
 // We need to use sessions to keep track of our user's login status
 // app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
