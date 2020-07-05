@@ -1,66 +1,48 @@
-# PROJECT2-BOOK-CLUB
 
-# Project 2
+  <img src="./public/assets/homepage.jpg" alt="plantkins"  width="1200" height="550px"/>
 
-## Application Requirements
+## QT BOOK CLUB
 
-* Must use a Node and Express server
+<table>
+<tr>
+<td>
+  A virtual book club to help keep readers connected during quarantine 
+</td>
+</tr>
+</table>
 
-* Must be backed by a MySQL database and an ORM (not necessarily Sequelize)
+## Take it for a spin.
 
-* Must utilize both GET and POST routes for retrieving and adding new data
+Here is a working live demo : https://protected-sierra-06049.herokuapp.com/
 
-* Must be deployed using Heroku (with data)
+## Contributions
 
-* Must utilize at least one new library, package, or technology that we haven't discussed
+Want to contribute? Great!
 
-* Must have a polished UI
+To fix a bug or enhance an existing module, follow these steps:
 
-* Must use a CSS framework _other than_ Bootstrap
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
 
-* Must follow MVC paradigm
+## Built with
 
-* Must meet good quality coding standards (indentation, scoping, naming)
-
-******FOLLOW THIS***
-
-you can use bootstrap (although it's recommended not to)
-you have to use Sequelize
-a third party can be any of the following: a library, package, technology or API (like any from RapidAPI)
-must use environment variables to protect sensitive info
-
-## Presentation Requirements
-
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following: 
-
-* Elevator pitch: a one minute description of your application
-
-* Concept: What is your user story? What was your motivation for development?
-
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-
-* Demo: Show your stuff!
-
-* Directions for Future Development
-
-* Links to to the deployed application and the GitHub repository
+- [Handlebars](https://handlebarsjs.com/)
+- [MySQL](https://www.mysql.com/)
+- [Node - Express](https://nodejs.org/en/)
 
 
-## Grading Metrics 
+## Crew
 
-| Metric        | Weight | 
-| ---           | ---    |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
+<a href="https://github.com/skrantzz">Sydney Krantz</a>
 
+<a href="https://github.com/thetntm">Michael Becker</a>
 
-## Submission on BCS
+<a href="https://github.com/AmberOutman">Amber Outman</a>
 
-You are required to submit the following:
+<a href="https://github.com/ajackson89">Antonio Jackson</a>
 
-* The URL of the deployed application
-
-* The URL of the GitHub repository
